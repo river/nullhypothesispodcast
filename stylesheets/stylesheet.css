@@ -43,6 +43,14 @@ body strong {
     line-height: 1.5em;
 }
 #mc_embed_signup{
-    background: none;
+    background: #333;
+    padding: 30px;
+    border-radius: 4px;
 /*    font:14px Helvetica,Arial,sans-serif;*/
+}
+#mc_embed_signup h3 {
+    margin: 0 0 1em 0;
+}
+#mc_embed_signup form .clear #mc-embedded-subscribe {
+    background-color: rgb(231, 189, 116);
 }
