@@ -42,4 +42,7 @@ body strong {
 #main-content {
     line-height: 1.5em;
 }
-
+#mc_embed_signup{
+    background: none;
+/*    font:14px Helvetica,Arial,sans-serif;*/
+}
