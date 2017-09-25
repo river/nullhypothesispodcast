@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    
+    {% if jekyll.environment == 'production' and site.google_analytics %}
+    {% include google-analytics.html %}
+    {% endif %}
+  </head>
+  <body>
+
+    <div id="container">
+
+      <header>
+        <h1 id="logo"><a href="/"><img src="/assets/null-hypo-logo-square@2x.png" style="width:300px; height:300px;" alt="Null Hypothesis"></a></h1>
+        <div id="sidebar">
+          <div id="byline">
+            <h2>A deep dive with River Jiang and Robyn Edgar into our scientific understanding of ageing</h2>
+          </div>
+          <nav>
+            <a href="#">RSS</a>
+            <a href="#">{% icon fa-podcast %}</a>
+            <a href="#">{% icon fa-envelope %}</a>
+            <a href="#">{% icon fa-facebook %}</a>
+            <a href="#">{% icon fa-twitter %}</a>
+          </nav>
+        </div>
+      </header>
+
+      
+
+      <div id="content">
+        <div class="card">
+          <h3>Ep 2. Evolution</h3>
+          <p>Lorem ipsum dolor sit <a href="#">amet</a>, consectetur adipiscing elit. Quisque et turpis eu nisl elementum hendrerit. Nulla luctus ullamcorper lobortis. Praesent luctus varius malesuada. Aenean luctus ultrices massa, sit amet tempus ante malesuada sit amet. Nunc cursus mollis accumsan. Mauris elementum volutpat ante convallis fermentum. Mauris placerat, felis quis luctus rhoncus, arcu mi aliquam odio, id rutrum nisi massa at erat. Nam sed viverra purus. Nulla venenatis eros sed dictum viverra. Nunc consectetur dui eget egestas luctus. Etiam semper egestas enim in posuere. Mauris at pretium mi. Sed nec purus varius, cursus quam a, consectetur turpis. Nam eu libero lorem.</p>
+        </div>
+
+        <div class="card">
+          <h3>Ep 1. Introduction</h3>
+          <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing elit</a>. Quisque et turpis eu nisl elementum hendrerit. Nulla luctus ullamcorper lobortis. Praesent luctus varius malesuada. Aenean luctus ultrices massa, sit amet tempus ante malesuada sit amet. Nunc cursus mollis accumsan. Mauris elementum volutpat ante convallis fermentum. Mauris placerat, felis quis luctus rhoncus, arcu mi aliquam odio, id rutrum nisi massa at erat. Nam sed viverra purus. Nulla venenatis eros sed dictum viverra. Nunc consectetur dui eget egestas luctus. Etiam semper egestas enim in posuere. Mauris at pretium mi. Sed nec purus varius, cursus quam a, consectetur turpis. Nam eu libero lorem.</p>
+        </div>
+      </div>
+
+      <footer>
+        &#169; <em>Null Hypothesis Podcast,</em> Robyn Edgar, River Jiang. <a href="#">Contact us</a>.
+      </footer>
+
+    </div>
+
+  </body>
+
+</html>
