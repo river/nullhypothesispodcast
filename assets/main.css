@@ -26,6 +26,11 @@ h1, h2, h3, h4, h5, h6 {
 	color: #000;
 }
 
+h2 {
+	font-size: 28px;
+	color: #e58700;
+}
+
 #container {
 	max-width: 780px;
 	margin: 0 auto;
@@ -35,7 +40,7 @@ header {
 	display: flex;
 	align-items: flex-end;
 	flex-wrap: wrap;
-	margin: 50px 0 60px 0;
+	margin: 50px 0 40px 0;
 }
 
 header h1 {
@@ -53,7 +58,7 @@ header #sideheader {
 }
 
 header h2 {
-	color: #37c7f6;
+	color: #e58700;
 	text-align: right;
 	font: 30px/1em 'Slabo 27px', serif;
 }
@@ -89,7 +94,9 @@ header nav a:hover {
 }
 
 .card h3 {
-	font-size: 26px;
+	font-size: 22px;
+	line-height: 1em;
+	margin: 1em 0 0 0;
 }
 
 footer {
