@@ -6,7 +6,7 @@ body {
 	background: #333 url("concrete-texture.png") repeat fixed;
 	color: #777;
 	background-size: 200px 200px;
-	font: 16px/1.5em "Open Sans", sans-serif;
+	font: 16px/1.8em "Open Sans", sans-serif;
 }
 
 a {
@@ -15,6 +15,10 @@ a {
 
 a:hover {
 	color: #a8eaff;
+}
+
+strong {
+	color: #000;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -70,13 +74,18 @@ header nav a {
 }
 
 header nav a:hover {
-	border-bottom-color: #a8eaff;
+	border-bottom-color: #37c7f6;
 }
 
 .card {
 	background: #fff;
 	padding: 20px 40px;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
+}
+
+.card-break {
+	display: block;
+	height: 50px;
 }
 
 .card h3 {
@@ -95,7 +104,7 @@ footer a {
 @media (max-width: 780px) {
 
 header {
-	margin: 20px;
+	margin: 20px 10px;
 }
 
 header h1 img {
@@ -105,6 +114,10 @@ header h1 img {
 header h2 {
 	font-size: 24px;
 	text-align: left;
+}
+
+.card {
+	padding: 5px 20px;
 }
 
 }
