@@ -7,14 +7,14 @@
 
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-    
+
     <meta property="og:image" content="{{ "/assets/NullHypoFBlogo.png" | absolute_url }}">
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
     <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
     <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-    
+
     {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}
     {% endif %}
@@ -40,15 +40,7 @@
       </header>
 
       <div id="content">
-        <div class="card">
-          <h3>Ep 2. Evolution test</h3>
-          <p><strong>Sep 5, 2048 &#183;</strong> Lorem ipsum dolor sit <a href="#">amet</a>, consectetur adipiscing elit. Quisque et turpis eu nisl elementum hendrerit. Nulla luctus ullamcorper lobortis. Praesent luctus varius malesuada. Aenean luctus ultrices massa, sit amet tempus ante malesuada sit amet. Nunc cursus mollis accumsan. Mauris elementum volutpat ante convallis fermentum. Mauris placerat, felis quis luctus rhoncus, arcu mi aliquam odio, id rutrum nisi massa at erat. Nam sed viverra purus. Nulla venenatis eros sed dictum viverra. Nunc consectetur dui eget egestas luctus. Etiam semper egestas enim in posuere. Mauris at pretium mi. Sed nec purus varius, cursus quam a, consectetur turpis. Nam eu libero lorem.</p>
-        </div>
-
-        <div class="card">
-          <h3>Ep 1. Introduction</h3>
-          <p><strong>Aug 21, 2048 &#183;</strong> Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing elit</a>. Quisque et turpis eu nisl elementum hendrerit. Nulla luctus ullamcorper lobortis. Praesent luctus varius malesuada. Aenean luctus ultrices massa, sit amet tempus ante malesuada sit amet. Nunc cursus mollis accumsan. Mauris elementum volutpat ante convallis fermentum. Mauris placerat, felis quis luctus rhoncus, arcu mi aliquam odio, id rutrum nisi massa at erat. Nam sed viverra purus. Nulla venenatis eros sed dictum viverra. Nunc consectetur dui eget egestas luctus. Etiam semper egestas enim in posuere. Mauris at pretium mi. Sed nec purus varius, cursus quam a, consectetur turpis. Nam eu libero lorem.</p>
-        </div>
+        {{ content }}
       </div>
 
       <div class="card-break"></div>
