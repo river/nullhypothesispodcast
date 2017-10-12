@@ -1,4 +1,4 @@
 <div class="card">
-  <h3>Ep {{ post.episode }}. {{ post.title | escape }}</h3>
-  {{ post.content }}
+  <h3><a href="{{ include.post.url | relative_url }}">Ep {{ include.post.episode }}. {{ include.post.title | escape }}</a></h3>
+  {{ include.post.content }}
 </div>

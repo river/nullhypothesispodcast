@@ -1,5 +1,5 @@
 ---
-layout: master
+layout: post
 title:  "Welcome to Jekyll!"
 episode: 1
 date:   2017-09-24 05:58:23 -0400
