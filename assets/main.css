@@ -32,6 +32,10 @@ h2 {
 	color: #e58700;
 }
 
+p {
+	padding-bottom: 1em;
+}
+
 #container {
 	max-width: 780px;
 	margin: 0 auto;
