@@ -9,7 +9,8 @@ podcast_title: Null Hypothesis with Robyn Edgar and River Jiang
 podcast_album_art: /assets/NullHypoSquarelogo.png
 podcast_author: Robyn Edgar and River Jiang
 podcast_explicit: clean
-podcast_email: contact@nullhypothesis.ca
+podcast_feed: http://feeds.soundcloud.com/users/soundcloud:users:334276491/sounds.rss
+podcast_email: nullhypopod@gmail.com
 podcast_subtitle: The Ageing Series
 podcast_category: Science &amp; Medicine
 podcast_subcategory_one: Medicine

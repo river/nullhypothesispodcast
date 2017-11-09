@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}"/>
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}"/>
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ site.podcast_feed }}" />
 
     {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}
@@ -30,11 +31,11 @@
             <h2>A deep dive with River Jiang and Robyn Edgar into our scientific understanding of ageing</h2>
           </div>
           <nav>
-            <a href="#">RSS</a>
-            <a href="#"><i class="fa fa-podcast"></i></a>
-            <a href="#"><i class="fa fa-envelope"></i></a>
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="{{ site.podcast_feed }}">RSS</a>
+            <!-- <a href="#"><i class="fa fa-podcast"></i></a> -->
+            <a href="mailto:{{ site.podcast_email }}"><i class="fa fa-envelope"></i></a>
+            <!-- <a href="#"><i class="fa fa-facebook"></i></a> -->
+            <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
           </nav>
         </div>
       </header>
@@ -44,7 +45,7 @@
       </div>
 
       <footer>
-        &#169; <em>Null Hypothesis Podcast,</em> Robyn Edgar, River Jiang. <a href="#">Contact us</a>.
+        &#169; <em>Null Hypothesis Podcast,</em> Robyn Edgar, River Jiang. <a href="mailto:{{ site.podcast_email }}">Contact us</a>.
       </footer>
 
     </div>
