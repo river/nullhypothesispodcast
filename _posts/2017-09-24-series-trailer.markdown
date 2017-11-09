@@ -3,6 +3,8 @@ layout: post
 title:  "Series trailer"
 episode: 0
 date:   2017-09-24 05:58:23 -0400
+include-in-itunes: true
+soundcloud: 353331611
 ---
 
 Everyone ages. But what is the biological basis of ageing? Is it, as we might assume, an inevitable process? In this new podcast series, River Jiang and Robyn Edgar bring you through the latest research in this exciting field, and the scientists, doctors, and entrepreneurs who are questioning some of our most basic assumptions.
