@@ -8,6 +8,10 @@
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}"/>
 
+    <link rel="icon" type="image/png" href="/assets/null-hypo-favicon16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/assets/null-hypo-favicon32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/null-hypo-favicon96.png" sizes="96x96">
+
     <meta property="og:image" content="{{ "/assets/NullHypoFBlogo.png" | absolute_url }}"/>
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}"/>
     <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}"/>
