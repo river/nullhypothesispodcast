@@ -16,6 +16,8 @@ podcast_category: Science &amp; Medicine
 podcast_subcategory_one: Medicine
 podcast_subcategory_two: Natural Sciences
 
+google_analytics: UA-39242805-3
+
 # Build settings
 markdown: kramdown
 # plugins:
